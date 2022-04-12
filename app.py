@@ -1,5 +1,5 @@
 import streamlit as st
-from PIL import Image
+# from PIL import Image
 
 with open("style.css") as f:
     st.markdown('<style>{}</style>'.format(f.read()), unsafe_allow_html=True)
@@ -11,8 +11,8 @@ st.write('''
 ##### *Resume* 
 ''')
 
-image = Image.open('photo.jpg')
-st.image(image, width=125)
+# image = Image.open('photo.jpg')
+# st.image(image, width=125)
 
 st.markdown('## Summary', unsafe_allow_html=True)
 st.info('''
